@@ -45,7 +45,7 @@
       <!-- TODO: CODE TO RENDER LIST OF AUSTEN'S WORKS HERE -->
       <ul>
         <li v-for="work in austen?.famousWorks" :key="work">
-          {{ work }}
+          {{ work.title }} ({{ work.year }})
         </li>
       </ul>
     </section>
