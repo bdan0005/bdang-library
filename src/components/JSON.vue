@@ -59,7 +59,7 @@
         Company:
         <!-- Activity 9a: Get the company name from the bookstores object. -->
         <!-- TODO: CODE TO GET COMPANY NAME HERE -->
-         {{ bookstores.company }}
+         {{ bookstores.name }}
       </p>
 
       <p>
