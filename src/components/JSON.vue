@@ -93,6 +93,11 @@
       <!-- Activity 12: Get the top sellers from the bookstores object. -->
       <!-- TODO: CODE TO GET TOP SELLERS HERE -->
       <p>We operate in:</p>
+      <ul>
+        <li v-for="country in bookstores.countries" :key="country">
+          {{ country }}
+        </li>
+      </ul>
       <p>Our #1 seller:</p>
       <ul>
         <li v-for="seller in bookstores.topSellers" :key="seller">
@@ -116,7 +121,15 @@
     <section class="lab-section">
       <h2>Attribute, Class and Style Binding with <code>v-bind</code></h2>
       <p>Highlighting Specific Authors:</p>
-
+      <ul>
+        <li
+          v-for="author in authors"
+          :key="author.id"
+          :class="{ highlight: author.name === 'George Orwell' }"
+        >
+          {{ author.name }} ({{ author.birthYear }})
+        </li>
+      </ul>
     </section>
   </div>
 </template>
